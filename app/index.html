@@ -2,7 +2,7 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>frontend</title>
+    <title>Borderly</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -23,7 +23,7 @@
     <script src="//use.typekit.net/noh4tkj.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
   </head>
-  <body data-spy="scroll" data-target=".nav-scroll">
+  <body id="top">
     <!--[if lt IE 10]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -35,13 +35,14 @@
           <li><a href="#about">About</a></li>
           <li><a href="#">Team</a></li>
         </ul>
-        <h3 class="text-muted"><img src="/images/logo.png" alt="logo" height="36"> Borderly</h3>
+        <h3 class="text-muted"><img src="images/logo.png" alt="logo" height="36"> Borderly</h3>
       </div>
 
       <div class="jumbotron">
-        <h1 class="bebas">Welcome to Borderly</h1>
+        <h1 class="text-muted">Welcome to Borderly</h1>
+        <img src="images/logo.png" alt="logo" height="500">
         <p class="lead">We show you the laws.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
+        <p><a class="btn btn-lg btn-success" href="/api">Go to the API</a></p>
       </div>
 
       <div class="row marketing" id="about">
@@ -61,15 +62,17 @@
         </div>
       </div>
 
+      <a href="#top" class="scrollup"><span class="glyphicon glyphicon-arrow-up"></span></a>
+
       <div class="footer">
-        <p>♥ from the Yeoman team</p>
+        <p><span class="glyphicon glyphicon-heart"></span> from the Borderly team</p>
       </div>
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-                                                              function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+       function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
        e.src='//www.google-analytics.com/analytics.js';
        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
