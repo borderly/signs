@@ -118,6 +118,12 @@ gulp.task('deploy', ['build'], function () {
         .pipe($.clean());
 });
 
+gulp.task('deploy', ['build'], function () {
+    return gulp.src('dist')
+        .pipe($.subtree())
+        .pipe($.clean());
+});
+
 gulp.task('watch', ['connect', 'serve'], function () {
     var server = $.livereload();
 
