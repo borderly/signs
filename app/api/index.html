@@ -2,25 +2,25 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>Borderly</title>
+    <title> Docs</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="../styles/main.css">
     <!-- endbuild -->
 
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googles.com/css?family=Raleway:400,100,700' rel='stylesheet' type='text/css'>
 
     <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="../bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
     <script src="//use.typekit.net/noh4tkj.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
@@ -37,41 +37,30 @@
           <li><a href="#about">About</a></li>
           <li><a href="#team">Team</a></li>
         </ul>
-        <h3 class="text-muted"><img src="images/logo.png" alt="logo" height="36"> Borderly</h3>
+        <h3 class="text-muted"><img src="../images/logo.png" alt="logo" height="36"> Borderly</h3>
       </div>
 
-      <div class="jumbotron">
-        <h1 class="text-muted">Welcome to Borderly</h1>
-        <img src="images/logo.png" alt="logo" height="500">
-        <p class="lead">We show you the laws.</p>
-        <p><a class="btn btn-lg btn-success" href="/api">Go to the API</a></p>
-      </div>
-
-      <div class="row marketing" id="about">
+      <div class="row marketing">
+        <h1 class="text-muted center"> Docs</h1>
+        <hr>
         <div class="col-lg-6">
-          <h3>Borderly</h3>
+          <h3 class="text-muted">Routes</h3>
+          <h3><pre><span class="http">GET</span> /</pre></h3>
           <p>Borderly is an application that is in development right now that will tell you the laws when you cross a border, be it state or county.</p>
-
-          <h4>The Laws</h4>
-          <p>Since we are small team of 3 high schoolers we don't have time to find out all the laws we will try and get the community to submit laws.</p>
-
-          <h4>Legal</h4>
-          <p>As above we are a group of 3 Freshmen in High School who are broke so we won't be perfect until we have this going for about a year.</p>
+          <h3><pre><span class="http">GET</span> /laws</pre></h3>
+          <p>This route shows a listing of all the different laws</p>
+          <h3><pre><span class="http">GET</span> /laws/:state</pre></h3>
+          <p>This route shows a listing of all the different laws for the :state (Using the 2 letter state abbrievation)</p>
         </div>
-      </div>
-
-      <hr>
-
-      <div id="team" class="row marketing">
         <div class="col-lg-6">
-          <h4>Alex <span class="desc">Lead Developer</span></h4>
-          <p>Alex is the lead Developer so he does the frontend and backend development. He is a part time web designer in his free time.</p>
-
-          <h4>David <span class="desc">Backend Developer</span></h4>
-          <p></p>
-
-          <h4>Chris <span class="desc">Backend Developer</span></h4>
-          <p>Chris is one of the backend designers development. In his free time he codes js and does soccer.</p>
+          <h3 class="text-muted">Examples</h3>
+          <h3><pre><span class="http">GET</span> /</pre></h3>
+          <br>
+          <br>
+          <br>
+          <h3><pre><span class="http">GET</span> /laws</pre></h3>
+          <br>
+          <h3><pre><span class="http">GET</span> /laws/:state</pre></h3>
         </div>
       </div>
 
@@ -94,8 +83,8 @@
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -103,10 +92,7 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
+    <script src="../scripts/main.js"></script>
     <!-- endbuild -->
-
-    <script>function loadCSS(e,t,n){"use strict";var i=window.document.createElement("link");var o=t||window.document.getElementsByTagName("script")[0];i.rel="stylesheet";i.href=e;i.media="only x";o.parentNode.insertBefore(i,o);setTimeout(function(){i.media=n||"all"})}
-    loadCSS('styles/site.css')</script>
   </body>
 </html>
