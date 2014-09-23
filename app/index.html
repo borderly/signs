@@ -33,9 +33,10 @@
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#team">Team</a></li>
+          <li><a href="#docs">Docs</a></li>
         </ul>
         <h3 class="text-muted"><img src="images/logo.png" alt="logo" height="36"> Borderly</h3>
       </div>
@@ -44,7 +45,7 @@
         <h1 class="text-muted">Welcome to Borderly</h1>
         <img src="images/logo.png" alt="logo" height="500">
         <p class="lead">We show you the laws.</p>
-        <p><a class="btn btn-lg btn-success" href="/api">Go to the API</a></p>
+        <p><a class="btn btn-lg btn-success" href="http://borderly.herokuapp.com">Go to the API</a></p>
       </div>
 
       <div class="row marketing" id="about">
@@ -68,10 +69,23 @@
           <p>Alex is the lead Developer so he does the frontend and backend development. He is a part time web designer in his free time.</p>
 
           <h4>David <span class="desc">Backend Developer</span></h4>
-          <p></p>
+          <p>David is the main backend developer. Right now he is learning C so he can become fluent in it.</p>
 
           <h4>Chris <span class="desc">Backend Developer</span></h4>
           <p>Chris is one of the backend designers development. In his free time he codes js and does soccer.</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div id="docs" class="row marketing">
+        <h3 class="text-muted center">Docs</h3>
+        <div class="col-lg-12">
+          <pre><span class="http">GET</span> /</pre>
+          <p>The main route for the borderly API.</p>
+          <pre><span class="http">GET</span> /laws</pre>
+          <p>An alphabetical listing of the laws.</p>
+          <p><span class="params">?limit=n</span> n being the amount of laws you would like to list</p>
         </div>
       </div>
 
@@ -106,7 +120,5 @@
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
 
-    <script>function loadCSS(e,t,n){"use strict";var i=window.document.createElement("link");var o=t||window.document.getElementsByTagName("script")[0];i.rel="stylesheet";i.href=e;i.media="only x";o.parentNode.insertBefore(i,o);setTimeout(function(){i.media=n||"all"})}
-    loadCSS('styles/site.css')</script>
   </body>
 </html>
